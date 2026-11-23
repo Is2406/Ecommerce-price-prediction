@@ -1,26 +1,67 @@
+
 # E-commerce Price Prediction
 
-A beginner machine learning project using Linear Regression to predict final e-commerce prices.
+A machine learning project that uses Linear Regression to predict the final price of e-commerce products after discount.
+
+## Project Overview
+
+This project explores an e-commerce dataset and uses product price and discount percentage to predict the final price. It demonstrates basic data exploration, visualization, model training, and evaluation using Python.
 
 ## Dataset
 
-The dataset contains product price, discount, category, payment method, and final price.
+The dataset contains 3,660 purchase records with these columns:
 
-## Model
+- User ID
+- Product ID
+- Category
+- Price (Rs.)
+- Discount (%)
+- Final Price (Rs.)
+- Payment Method
+- Purchase Date
 
-- Algorithm: Linear Regression
-- Features: Price and discount
-- Target: Final price
-- Mean Absolute Error: 15.14 Rs.
-- R² Score: 0.965
+## Machine Learning
 
-## Note
+- **Problem type:** Regression
+- **Algorithm:** Linear Regression
+- **Features:** Price and discount
+- **Target:** Final price
+- **Train-test split:** 80% training and 20% testing
 
-Final price is calculated from the original price and discount. This project demonstrates the machine learning workflow on that relationship.
+## Project Workflow
 
-## Libraries
+1. Loaded the dataset using pandas.
+2. Checked the data and its numeric columns.
+3. Created a correlation heatmap.
+4. Split the features and target into training and test sets.
+5. Trained a Linear Regression model.
+6. Evaluated predictions using MAE and R².
+7. Compared actual and predicted prices with a graph.
 
+## Results
+
+- **Mean Absolute Error (MAE):** 15.14 Rs.
+- **R² Score:** 0.965
+
+The model's predictions fit the test data well. MAE represents the average prediction error in rupees.
+
+## Technologies
+
+- Python
+- Jupyter Notebook
 - pandas
 - scikit-learn
-- matplotlib
-- seaborn
+- Matplotlib
+- Seaborn
+
+## Important Note
+
+The final price in this dataset is calculated from the original price and discount. This project demonstrates the regression workflow, but the target is mathematically related to the input features.
+
+## How to Run
+
+1. Download or clone this repository.
+2. Install the required libraries:
+
+   ```bash
+   pip install pandas scikit-learn matplotlib seaborn
