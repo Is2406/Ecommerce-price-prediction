@@ -58,10 +58,4 @@ The model's predictions fit the test data well. MAE represents the average predi
 
 The final price in this dataset is calculated from the original price and discount. This project demonstrates the regression workflow, but the target is mathematically related to the input features.
 
-## How to Run
 
-1. Download or clone this repository.
-2. Install the required libraries:
-
-   ```bash
-   pip install pandas scikit-learn matplotlib seaborn
